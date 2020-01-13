@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E91E63"
+    android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="385dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/b"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view1"
+            android:layout_width="385dp"
+            android:layout_height="500dp"
+            android:background="#DAD5D5"
+            app:layout_constraintLeft_toLeftOf="@id/img1"
+            app:layout_constraintRight_toRightOf="@id/img1"
+            app:layout_constraintTop_toBottomOf="@id/img1">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="My Love \n you like a flower"
+                android:textAllCaps="true"
+                android:textColor="#009688"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="👍 Editor's Choice"
+                android:textColor="#E91E63"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toLeftOf="@id/txt1"
+                app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="We're all a little weird.And lige is a little\nweird\n\t\t\tHello how are you?Ready to go for the next trip. \n \t\tWas poverty a schemes him he dressing moutains and as surprise haven't subject and could a entered would in the of be not posts"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="@id/txt2"
+                app:layout_constraintTop_toBottomOf="@id/txt2" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="$99.28"
+                android:textSize="30dp"
+                app:layout_constraintLeft_toLeftOf="@id/txt1"
+                app:layout_constraintTop_toBottomOf="@id/txt3" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Order now"
+                app:layout_constraintBottom_toBottomOf="@id/txt4"
+                app:layout_constraintRight_toRightOf="@id/txt3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Andorid Development" />
+
+    <TextView
+        android:id="@+id/txt_bootcamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txt_android"
+        android:text="Bootcamp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Hello"
+        android:layout_alignParentEnd="true"
+
+
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+       android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Layout Example" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/btn1"
+        android:layout_margin="10dp"
+        android:background="#2EDDB9"
+
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#9C27B0"
+        android:text="Clear"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="#3F51B5"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btn1"
+        />
+
+</RelativeLayout>

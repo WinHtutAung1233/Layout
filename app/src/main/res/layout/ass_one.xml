@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8D8888"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John McDonald"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Los Angles,CA"
+        app:layout_constraintTop_toBottomOf="@id/txttitle"
+        app:layout_constraintLeft_toLeftOf="@id/txttitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/deadpoll"
+        app:layout_constraintLeft_toRightOf="@id/txttitle"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/btn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="Follow"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/img1"
+        android:padding="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35"
+        app:layout_constraintTop_toBottomOf="@id/btn11"
+        app:layout_constraintLeft_toLeftOf="@id/btn11"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1256"
+        app:layout_constraintBaseline_toBaselineOf="@id/txt1"
+        app:layout_constraintLeft_toRightOf="@id/txt1"
+        android:layout_margin="30dp"
+        />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posts"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintLeft_toLeftOf="@id/txt1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="followers"
+        app:layout_constraintBaseline_toBaselineOf="@id/txt2"
+        app:layout_constraintLeft_toRightOf="@id/txt2"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/a"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/img3"
+        />
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/b"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@id/img2"
+        app:layout_constraintBottom_toBottomOf="@id/img2"
+        app:layout_constraintRight_toLeftOf="@id/img4"
+        />
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/c"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@id/img3"
+        app:layout_constraintBottom_toBottomOf="@id/img2"
+        app:layout_constraintRight_toLeftOf="@id/img5"
+        />
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/d"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@id/img4"
+        app:layout_constraintBottom_toBottomOf="@id/img2"
+        app:layout_constraintRight_toLeftOf="@id/img6"
+        />
+    <ImageView
+        android:id="@+id/img6"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/e"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@id/img5"
+        app:layout_constraintBottom_toBottomOf="@id/img2"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/img8"
+        app:layout_constraintTop_toBottomOf="@id/img2" />
+
+    <ImageView
+        android:id="@+id/img8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ig"
+        app:layout_constraintBottom_toBottomOf="@id/img7"
+        app:layout_constraintLeft_toRightOf="@id/img7"
+        app:layout_constraintRight_toLeftOf="@id/img9"
+        />
+    <ImageView
+        android:id="@+id/img9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tel"
+        app:layout_constraintBottom_toBottomOf="@id/img7"
+        app:layout_constraintLeft_toRightOf="@id/img8"
+        app:layout_constraintRight_toLeftOf="@id/img10"
+        />
+    <ImageView
+        android:id="@+id/img10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_youtube"
+        app:layout_constraintBottom_toBottomOf="@id/img7"
+        app:layout_constraintLeft_toRightOf="@id/img9"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@id/img7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txtabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        app:layout_constraintTop_toBottomOf="@id/img7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="30dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="\t\t\tHello how are you?Ready to go for the next trip. \n \t\tWas poverty a schemes him he dressing moutains and as surprise haven't subject and could a entered would in the of be not posts"
+        app:layout_constraintTop_toBottomOf="@id/txtabout"
+        app:layout_constraintLeft_toLeftOf="@id/txtabout"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
